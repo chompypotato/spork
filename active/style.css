@@ -104,3 +104,38 @@ body {
    color: #555;
    transform: scale(1.05);
 }
+
+ .github-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #24292e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+        }
+
+        .github-button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .github-icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            margin-right: 8px;
+            transition: fill 0.3s;
+        }
+
+        .github-button:hover .github-icon {
+            fill: black;
+        }
