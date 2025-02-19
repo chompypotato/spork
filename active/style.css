@@ -84,3 +84,19 @@ body {
    color: #555;
    transform: scale(1.05);
 }
+
+/* Heading */
+#content .the-p {
+   margin-bottom: 20px;
+   font-family: "Courier New", monospace;
+   font-size: 24px;
+   text-transform: uppercase;
+   color: #000000;
+   transition: all 0.3s ease;
+   text-shadow: none;
+}
+
+#content .the-p:hover {
+   color: #555;
+   transform: scale(1.05);
+}
