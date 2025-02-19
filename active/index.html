@@ -54,35 +54,45 @@
       <script src="index.js" charset="UTF-8" defer></script>
 
       <script>
-         particlesJS('particles-js', {
-            particles: {
-               number: { value: 75 },
-               color: { value: "#000000" },
-               shape: { type: "circle" },
-               opacity: { value: 1 },
-               size: { value: 1 },
-               line_linked: {
-                  enable: true,
-                  distance: 150,
-                  color: "#000000",
-                  opacity: 0.4,
-                  width: 1,
-               },
-               move: {
-                  enable: true,
-                  speed: 9,
-               },
-            },
-            interactivity: {
-               detect_on: "window",
-               events: {
-                  onhover: { enable: true, mode: "repulse" },
-                  onclick: { enable: false, mode: "push" },
-               },
-               
-            },
-            retina_detect: true,
-         });
+        particlesJS('particles-js', {
+    particles: {
+        number: { value: 75 },
+        color: { value: "#000000" },
+        shape: { type: "circle" },
+        opacity: { value: 1 },
+        size: { value: 1 },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#000000",
+            opacity: 0.4,
+            width: 1,
+        },
+        move: {
+            enable: true,
+            speed: 9,
+        },
+    },
+    interactivity: {
+        detect_on: "window",
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: false, mode: "push" },
+        },
+        modes: { 
+            repulse: {
+                distance: 50, 
+                duration: 0.4,
+            }
+        }
+    },
+    retina_detect: true,
+});
+
+      </script>
+
+      
+      <script>
 
          // Keep the functionality of the old search bar
          document.querySelector('#uv-form').addEventListener('submit', function(event) {
