@@ -7,54 +7,80 @@ body {
    padding: 0;
 }
 
+#particles-js {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: -5;
+}
+
 #content {
+   height: auto;
    min-height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   text-align: center;
    gap: 20px;
-}
-
-/* Search Bar */
-.input-container {
-   position: relative;
-   width: 100%;
-   max-width: 400px;
+   text-align: center;
 }
 
 .input {
    width: 100%;
-   height: 50px;
-   padding: 10px 15px;
-   font-size: 16px;
+   height: 60px;
+   padding: 12px 20px 12px 50px;
+   font-size: 18px;
    font-family: "Courier New", monospace;
    color: #000000;
-   background: #ffffff;
+   background: rgba(255, 255, 255, 0.9);
    border: 2px solid #000000;
-   border-radius: 25px;
+   border-radius: 30px;
    outline: none;
-   transition: all 0.2s ease-in-out;
+   transition: all 0.3s ease;
+   box-shadow: none;
 }
 
 .input:focus {
    border-color: #333;
+   transform: scale(1.02);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .input::placeholder {
-   color: #777;
+   color: #555;
    opacity: 0.7;
 }
 
-/* Search Icon */
+.input-container {
+   position: relative;
+   width: 100vw;
+   max-width: 500px;
+}
+
 .input-container .fa-search {
    position: absolute;
-   left: 15px;
+   left: 20px;
    top: 50%;
    transform: translateY(-50%);
-   color: #555;
-   font-size: 16px;
+   color: #000000;
    pointer-events: none;
+   z-index: 10;
+}
+
+/* Heading */
+#content h1 {
+   margin-bottom: 20px;
+   font-family: "Courier New", monospace;
+   font-size: 96px;
+   text-transform: uppercase;
+   color: #000000;
+   transition: all 0.3s ease;
+   text-shadow: none;
+}
+
+#content h1:hover {
+   color: #555;
+   transform: scale(1.05);
 }
