@@ -1,107 +1,60 @@
 /* General styling */
 body {
    background-color: #ffffff;
-   color: #e0e0e0;
+   color: #000000;
    font-family: 'Open Sans', sans-serif;
    margin: 0;
    padding: 0;
 }
 
-#particles-js {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   z-index: -5;
-}
-
 #content {
-   height: auto; /* Allow content to fit naturally */
    min-height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 20px; /* Add spacing between sections */
-   text-align: center; /* Center child elements like h1 and input */
+   text-align: center;
+   gap: 20px;
+}
+
+/* Search Bar */
+.input-container {
+   position: relative;
+   width: 100%;
+   max-width: 400px;
 }
 
 .input {
    width: 100%;
-   height: 60px;
-   padding: 12px 20px 12px 50px;
-   font-size: 18px;
+   height: 50px;
+   padding: 10px 15px;
+   font-size: 16px;
    font-family: "Courier New", monospace;
-   color: #e0e0e0;
-   background: rgba(30, 30, 60, 0.7);
-   border: none;
-   border-radius: 30px;
+   color: #000000;
+   background: #ffffff;
+   border: 2px solid #000000;
+   border-radius: 25px;
    outline: none;
-   transition: all 0.3s ease;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 
-               0 0 40px rgba(0, 0, 255, 0.5), 
-               0 0 80px rgba(255, 0, 255, 0.5);
-   backdrop-filter: blur(10px);
+   transition: all 0.2s ease-in-out;
 }
 
 .input:focus {
-   box-shadow: 0 0 20px rgba(0, 0, 255, 0.8), 
-               0 0 40px rgba(255, 0, 255, 0.8), 
-               0 0 80px rgba(255, 0, 255, 1);
-   transform: scale(1.02);
+   border-color: #333;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-#content h1 {
-   margin-bottom: 20px;
-   font-family: "Courier New", monospace;
-   font-size: 96px;
-   text-transform: uppercase;
-   color: #e0e0e0;
-   transition: all 0.3s ease;
-   text-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 
-                0 0 20px rgba(255, 0, 255, 0.5), 
-                0 0 30px rgba(255, 0, 255, 0.7);
-}
-
-#content h1:hover {
-   color: #000000;
-   
-   transform: scale(1.05);
-}
-
-
-
 
 .input::placeholder {
-   color: #aaa;
+   color: #777;
    opacity: 0.7;
 }
 
-
-
-.input-container {
-   position: relative;
-   width: 100vw;
-   max-width: 500px;
-}
-
+/* Search Icon */
 .input-container .fa-search {
    position: absolute;
-   left: 20px;
+   left: 15px;
    top: 50%;
    transform: translateY(-50%);
-   color: #e0e0e0;
+   color: #555;
+   font-size: 16px;
    pointer-events: none;
-   z-index: 10;
-}
-
-.input-container .fa-search:focus {
-   transform: scale(1.02);
-   z-index: 10;
-}
-
-.input:focus::placeholder {
-   color: #666;
-   opacity: 0.5;
 }
