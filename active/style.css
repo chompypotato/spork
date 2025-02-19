@@ -59,19 +59,8 @@ body {
    max-width: 500px;
 }
 
-.input-container .fa-search {
-   position: absolute;
-   left: 20px;
-   top: 50%;
-   transform: translateY(-50%);
-   color: #000000;
-   pointer-events: none;
-   transition: transform 0.3s ease; /* Add transition for smooth scaling */
-}
 
-.input:focus + .input-container .fa-search {
-   transform: translateY(-50%) scale(1.2); /* Scale the icon when input is focused */
-}
+
 
 /* Heading */
 #content h1 {
@@ -93,6 +82,7 @@ body {
 #content .the-p {
    font-family: "Courier New", monospace;
    font-size: 16px;
+   
    color: #000000;
    transition: all 0.3s ease;
    text-shadow: none;
@@ -103,37 +93,37 @@ body {
    transform: scale(1.05);
 }
 
-.github-button {
-   display: inline-flex;
-   align-items: center;
-   padding: 10px 15px;
-   background-color: #24292e;
-   color: white;
-   border: none;
-   border-radius: 5px;
-   font-size: 16px;
-   cursor: pointer;
-   text-decoration: none;
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   transition: background-color 0.3s, transform 0.3s, color 0.3s;
-}
+ .github-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #24292e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transition: background-color 0.3s, transform 0.3s, color 0.3s;
+        }
 
-.github-button:hover {
-   background-color: white;
-   color: black;
-   transform: scale(1.1);
-}
+        .github-button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+        }
 
-.github-icon {
-   width: 24px;
-   height: 24px;
-   fill: white;
-   margin-right: 8px;
-   transition: fill 0.3s;
-}
+        .github-icon {
+            width: 24px;
+            height: 24px;
+            fill: white;
+            margin-right: 8px;
+            transition: fill 0.3s;
+        }
 
-.github-button:hover .github-icon {
-   fill: black;
-}
+        .github-button:hover .github-icon {
+            fill: black;
+        }
